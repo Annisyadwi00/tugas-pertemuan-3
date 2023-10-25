@@ -1,0 +1,16 @@
+public class KonversiSuhu2 {
+     public double fahrenheitToReamur(double suhuFahrenheit) {
+        // Rumus konversi dari Fahrenheit ke Reamur: R = (F - 32) * 4/9
+        double suhuReamur = (suhuFahrenheit - 32) * 4/9;
+        return suhuReamur;
+    }
+
+    public static void main(String[] args) {
+        KonversiSuhu2 konversi2 = new KonversiSuhu2();
+
+        double suhuFahrenheit = 77.0; // Contoh suhu dalam Fahrenheit
+        double suhuReamur = konversi2.fahrenheitToReamur(suhuFahrenheit);
+
+        System.out.println(suhuFahrenheit + " derajat Fahrenheit sama dengan " + suhuReamur + " derajat Reamur");
+    }
+}
