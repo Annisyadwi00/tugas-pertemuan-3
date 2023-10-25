@@ -1,0 +1,26 @@
+public class KonversiSuhu {
+  
+    public double celciusToFahrenheit(double suhuCelcius) {
+        // Rumus konversi dari Celcius ke Fahrenheit: F = (C * 9/5) + 32
+        double suhuFahrenheit = (suhuCelcius * 9/5) + 32;
+        return suhuFahrenheit;
+    }
+
+    public double celciusToReamur(double suhuCelcius) {
+        // Rumus konversi dari Celcius ke Reamur: R = C * 4/5
+        double suhuReamur = suhuCelcius * 4/5;
+        return suhuReamur;
+    }
+
+    public static void main(String[] args) {
+        KonversiSuhu konversi = new KonversiSuhu();
+
+        double suhuCelcius = 25.0;
+        double suhuFahrenheit = konversi.celciusToFahrenheit(suhuCelcius);
+        double suhuReamur = konversi.celciusToReamur(suhuCelcius);
+
+        System.out.println(suhuCelcius + " derajat Celcius sama dengan " + suhuFahrenheit + " derajat Fahrenheit");
+        System.out.println(suhuCelcius + " derajat Celcius sama dengan " + suhuReamur + " derajat Reamur");
+    }
+}
+
