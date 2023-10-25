@@ -1,0 +1,19 @@
+public class DemoKonversiSuhu {
+    public static void main(String[] args) {
+        double suhuCelcius = 25.0;
+        double suhuFahrenheit, suhuReamur;
+
+        KonversiSuhu konversi = new KonversiSuhu();
+        suhuFahrenheit = konversi.celciusToFahrenheit(suhuCelcius);
+        suhuReamur = konversi.celciusToReamur(suhuCelcius);
+
+        System.out.println(suhuCelcius + " derajat Celcius sama dengan " + suhuFahrenheit + " derajat Fahrenheit");
+        System.out.println(suhuCelcius + " derajat Celcius sama dengan " + suhuReamur + " derajat Reamur");
+
+        KonversiSuhu2 konversi2 = new KonversiSuhu2();
+        suhuFahrenheit = 77.0; // Contoh suhu dalam Fahrenheit
+        suhuReamur = konversi2.fahrenheitToReamur(suhuFahrenheit);
+
+        System.out.println(suhuFahrenheit + " derajat Fahrenheit sama dengan " + suhuReamur + " derajat Reamur");
+    }
+}
